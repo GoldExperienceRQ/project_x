@@ -1,0 +1,120 @@
+
+----------
+Rest api design
+
+--
+Get /events
+Patch /events
+Delete/events
+
+Get /events/id
+--
+
+--
+Get /users
+Patch /users
+Delete /users
+
+Get /users/id
+--
+
+--
+Get /organizers
+Patch /organizers
+Delete /organizers
+
+Get /organizers/id
+--
+
+--
+Get /visitors_event
+Delete /visitors_events
+
+Get /visitors_events/id
+--
+
+
+---------
+GraphQL api design
+
+--
+/graphQl
+
+query{
+   events{
+        events(id){}
+   }
+   visitors{
+        visitor(id){}
+   }
+   organizers{
+        organizer(id){}
+   }
+   visitors_events{
+        visitor_event(id){}
+   }
+
+   event(id){
+        _id
+        name
+        date
+        location
+        organizers{}
+        visitors{}
+   }
+   visitor(id){
+        _id
+        name
+        events{}
+   }
+   organizer(id){
+        _id
+        name
+        events{}
+   }
+   visitor_event(id){
+        _id
+        visitor_id
+        event_id
+        visitor{}
+        event{}
+   }
+}
+--
+
+
+---------
+DB Design
+
+events
+    fields:
+        _id
+        name
+        date
+        location
+        organizer_id
+
+visitors_events
+    fields:
+        _id
+        visitor_id
+        event_id
+
+visitors
+    fields:
+        _id
+        name
+        age
+
+organizers
+    fields:
+        _id
+        name
+
+{
+
+
+
+
+
+}
