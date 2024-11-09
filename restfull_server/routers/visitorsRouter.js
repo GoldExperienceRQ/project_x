@@ -1,8 +1,8 @@
 const express = require("express");
 const GenericService = require("../../service/GenericService");
-const Event = require("../../models/Event");
+const Visitor = require("../../models/Visitor");
 
-const db=new GenericService(Event);
+const db=new GenericService(Visitor);
 const router=express.Router();
 
 
@@ -68,6 +68,7 @@ router.delete('/:id', async (req, res)=>{
     }
 })
 
+
 router.post('/', async (req, res)=>{
     try{
         let result=db.add(req.body);
@@ -78,6 +79,5 @@ router.post('/', async (req, res)=>{
         res.status(500).json(er);
     }
 });
-
 
 module.exports = router

@@ -4,32 +4,33 @@ Rest api design
 
 --
 --Get /events 
-Patch /events
-Delete/events
+--Patch /events
+--Delete/events
+--Post/events
 
-Get /events/id
+--Get /events/id
 --
 
 --
-Get /visitors
-Patch /visitors
-Delete /visitors
-
-Get /users/id
+--Get /visitors
+--Patch /visitors
+--Delete /visitors
+--Post/visitors
+--Get /users/id
 --
 
 --
 Get /organizers
 Patch /organizers
 Delete /organizers
-
+Post/organizers
 Get /organizers/id
 --
 
 --
 Get /visitors_event
 Delete /visitors_events
-
+Post/visitor_events
 Get /visitors_events/id
 --
 

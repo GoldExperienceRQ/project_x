@@ -1,20 +1,19 @@
 const express = require("express");
 const server = express();
 const port =8080;
-const eventsRouter = require("./routers/eventsRouter")
+const eventsRouter = require("./routers/eventsRouter");
+const visitorsRouter = require("./routers/visitorsRouter");
 
 const connectToDatabase = require("../dbConnection");
-const getters=require("./getters");
-const setGetters = require("./getters");
 const bodyParser = require('body-parser');
 
 
-server.use(bodyParser.json());
+server.use(express.json());
 
 connectToDatabase()
 server.listen(port, ()=>{
     console.log(`Server running on port `+port)
 });
 server.use("/events", eventsRouter);
-
+server.use("/visitors", visitorsRouter);
 
