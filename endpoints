@@ -11,7 +11,7 @@ Get /events/id
 --
 
 --
---Get /visitors
+Get /visitors
 Patch /visitors
 Delete /visitors
 
