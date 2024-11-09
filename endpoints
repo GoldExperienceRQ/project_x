@@ -3,7 +3,7 @@
 Rest api design
 
 --
-Get /events
+--Get /events 
 Patch /events
 Delete/events
 
@@ -11,9 +11,9 @@ Get /events/id
 --
 
 --
-Get /users
-Patch /users
-Delete /users
+--Get /visitors
+Patch /visitors
+Delete /visitors
 
 Get /users/id
 --
