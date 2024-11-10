@@ -3,9 +3,9 @@ const server = express();
 const port =8080;
 const eventsRouter = require("./routers/eventsRouter");
 const visitorsRouter = require("./routers/visitorsRouter");
+const orginizersRouter = require("./routers/orginizersRouter");
 
 const connectToDatabase = require("../dbConnection");
-const bodyParser = require('body-parser');
 
 
 server.use(express.json());
@@ -16,4 +16,4 @@ server.listen(port, ()=>{
 });
 server.use("/events", eventsRouter);
 server.use("/visitors", visitorsRouter);
-
+server.use("/orginizers", orginizersRouter);
