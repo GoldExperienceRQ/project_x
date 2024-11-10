@@ -20,18 +20,19 @@ Rest api design
 --
 
 --
-Get /organizers
-Patch /organizers
-Delete /organizers
-Post/organizers
-Get /organizers/id
+--Get /organizers
+--Patch /organizers
+--Delete /organizers
+--Post/organizers
+--Get /organizers/id
 --
 
 --
-Get /visitors_event
-Delete /visitors_events
-Post/visitor_events
-Get /visitors_events/id
+--Get /visitors_event
+--Patch/visitors_event
+--Delete /visitors_events
+--Post/visitor_events
+--Get /visitors_events/id
 --
 
 

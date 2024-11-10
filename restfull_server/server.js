@@ -4,6 +4,7 @@ const port =8080;
 const eventsRouter = require("./routers/eventsRouter");
 const visitorsRouter = require("./routers/visitorsRouter");
 const orginizersRouter = require("./routers/orginizersRouter");
+const visitorsEventsRouter = require("./routers/visitorsEventsRouter");
 
 const connectToDatabase = require("../dbConnection");
 
@@ -17,3 +18,4 @@ server.listen(port, ()=>{
 server.use("/events", eventsRouter);
 server.use("/visitors", visitorsRouter);
 server.use("/orginizers", orginizersRouter);
+server.use("/visitors_events", visitorsEventsRouter);
