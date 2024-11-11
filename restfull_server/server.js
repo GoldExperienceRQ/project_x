@@ -17,5 +17,5 @@ server.listen(port, ()=>{
 });
 server.use("/events", eventsRouter);
 server.use("/visitors", visitorsRouter);
-server.use("/orginizers", orginizersRouter);
+server.use("/organizers", orginizersRouter);
 server.use("/visitors_events", visitorsEventsRouter);
