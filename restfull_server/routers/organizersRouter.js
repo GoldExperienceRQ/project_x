@@ -1,8 +1,8 @@
 const express = require("express");
 const GenericService = require("../../service/GenericService");
-const Orginizer = require("../../models/Organizer");
+const Organizer = require("../../models/Organizer");
 
-const db=new GenericService(Orginizer);
+const db=new GenericService(Organizer);
 const router=express.Router();
 
 
